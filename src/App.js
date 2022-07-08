@@ -1,13 +1,21 @@
-import Button from "./Button";
-import styles from "./App.module.css";
-import { useState, useEffect } from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Detail from "./routes/Detail";
+import Home from "./routes/Home";
 
 function App() {
-  return (
-    <div>
-
-    </div>
-  );
+  return <Router>
+    <Switch>
+      <Route path="/hello">
+        <h1>Hello</h1>
+      </Route>
+      <Route path="/detail">
+        <Detail />
+      </Route>
+      <Route path="/">
+        <Home />
+      </Route>
+    </Switch>
+  </Router>;
 }
 
 export default App;
