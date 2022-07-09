@@ -25,7 +25,6 @@ function Home() {
 
     // map은 원하는 요소를 원하는 값으로 바꿀 수 있음
     return (
-
         <div className={styles.container}>
             {loading ? (
                 <div className={styles.loader}>
